@@ -169,27 +169,11 @@ h1{
     width: 100%; 
 }
 
-.services{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-
-.service-cards{
-    width: 32%;
-    height: 500px;
+.service-cards {
+    grid-column: span 4;
     background-color: #A27B5C;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-}
-
-.service-cards > p{
-    font-size: 24px; 
-    text-align: justify;
+    padding: 25px;
+    border-radius: 25px;
 }
 
 /* Portfolio Section Styling */
