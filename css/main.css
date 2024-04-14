@@ -28,7 +28,48 @@ section{
 
 p{
     font-size: 1em;
+    padding: 1em 0 1em 0;
 }
+
+h3{
+    font-size: 1.73em;
+    padding-bottom: 0.5em;
+}
+
+h1{
+    font-size: 2.48em;
+    padding: 0.5em 0 0.5em 0 ;
+}
+
+button{
+    padding: 0.2em;
+    font-size: 1em;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn-full{
+    border: solid;
+    border-radius: 5px;
+    border-color: #A27B5C;
+    background-color: #A27B5C;
+}
+
+.btn-full > a{
+    background-color: #A27B5C;
+}
+
+.btn-full:hover{
+    background-color: #2C3639;
+}
+
+.btn-full > a:hover{
+    background-color: #2C3639;
+}
+
 
 
 
