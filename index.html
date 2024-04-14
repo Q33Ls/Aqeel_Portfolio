@@ -7,78 +7,76 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;600;700&family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/responsive.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('boKyyyG-ainPpVTrP');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_13o9h86', 'template_6gltkd5', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+    
 
 </head>
+
 <body>
-
- <nav class="navbar">
-       <a href="#" class="logo">AQEEL.</a>
-       <input type="checkbox" id="toggler">
-       <label for="toggler"><i class="fa-solid fa-bars"></i></label>
-       <div class="menu">
-           <ul class="list">
-               <li><a href="index.html">Home</a></li>
-               <li><a href="#services">Services</a></li>
-               <li><a href="#portfolio">Portfolio</a></li>
-               <li><a href="#about_me">About Me</a></li>
-               <li><a href="#contact_me">Contact Me</a></li>
-           </ul>
-       </div>
-
-   </nav> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Eleventh navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">AQEEL.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarsExample09">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Me</a>
+              </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
    <section class="hero">
     <div class="hero-info">
         <h1>Hi, I'm Aqeel Dalvie</h1>
         <h3>Frontend Developer</h3>
         <p>"Hi there! I'm [Your Name], a front-end web developer who crafts captivating designs and seamless user experiences. With expertise in pixel-perfect designs and responsive coding, I bring websites to life that blend creativity and functionality, leaving a lasting impression on visitors."</p>
-        <div>
-            <button class="btn-full"><a href="">Let's Talk</a></button>
-            <button class="btn-outline "><a href="">Resume</a></button></div>
+        
+    <div>
+        <button class="btn-full"><a href="">Let's Talk</a></button>
+        <button class="btn-outline "><a href="">Resume</a></button>
     </div>
-    
-    <div class="hero-img">
-        <img src="/imgs/Profile/IMG_6537 (1).jpg" alt="">
-    </div>
+   
+</div>
+<div class="hero-img">
+    <img src="/imgs/Profile/IMG_6537 (1).jpg" alt="">
+</div>
     <div class="socials">
         <a href=""><img src="/imgs/Socials/icons8-whatsapp-50.png" alt=""></a>
         <a href=""><img src="imgs/Socials/icons8-linkedin-50.png" alt=""></a>
         <a href=""><img src="imgs/Socials/icons8-instagram-50.png" alt=""></a>
     </div>
-    <div class="scroll-btn">
-        <button class="btn-full"><a href="#services">Scroll Down</a></button>
-    </div>
+
+
+
 
    </section>
    
    <section class="services" id="services">
-    <h2 class="service-h">Services</h2>
+    <div class="section_head">
+        <h2 class="service-h">Services</h2>
+    </div>
+    
         <div class="service-cards">
             <h3>Design</h3>
             <p>Capture attention and inspire action with bespoke web designs. Using Figma, I create mockups that fuse layout precision, captivating colors, expressive fonts, and impactful graphics. Elevate your brand's digital presence through visually stunning and user-centric designs that leave a lasting impression. Let's shape your website into an engaging experience that drives results.</p>
@@ -163,9 +161,35 @@
     </form>
     
    </section>
+<!-- Bootstrap Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-   
-   
-   
+<!-- EmailJs Script-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+   <script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init('boKyyyG-ainPpVTrP');
+    })();
+    </script>
+
+    <script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = Math.random() * 100000 | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm('service_13o9h86', 'template_6gltkd5', this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+    </script>
 </body>
 </html>
