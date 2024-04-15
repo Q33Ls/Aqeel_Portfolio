@@ -3,13 +3,19 @@
     box-sizing: border-box;
     font-family: 'Fira Sans', sans-serif;
     color: white;
-    background-color: #2C3639; 
 }
-
 
 
 body{
     background-color: #2C3639; 
+}
+
+.navbar{
+    --bs-navbar-brand-color: white;
+    --bs-navbar-brand-hover-color: white;
+    --bs-navbar-active-color: #A27B5C;
+    --bs-navbar-toggler-border-color: white;
+    --bs-navbar-color: white;
 }
 
 section{
@@ -19,7 +25,9 @@ section{
 }
 
 .section_head{
+    display: grid;
     grid-column: span 12;
+    justify-content: center;
 }
 
 .socials{
@@ -70,6 +78,50 @@ a{
     background-color: #2C3639;
 }
 
+.btn-outline{
+    border: solid;
+    border-radius: 5px;
+    border-color: #A27B5C;
+    background-color: #2C3639;
+}
+
+.btn-outline > a{
+    background-color: #2C3639;
+}
+
+.btn-outline:hover{
+    background-color: #A27B5C;
+}
+
+.btn-outline > a:hover{
+    background-color:#A27B5C ;
+}
+
+/*Service Card Perm Stylings*/
+
+.service-cards  {
+    display: grid;
+    background-color: #A27B5C;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.service-cards > h3{
+    display: grid;
+    justify-content: center;
+}
+
+/*Portfolio Card Perm Styling*/
+.port_cards > h4{
+    display: grid;
+    justify-content: center;
+}
+
+.port_cards > p{
+    display: grid;
+    justify-content: center;
+}
+
 
 
 
@@ -90,6 +142,40 @@ a{
     }
 
     
+/* Services Section Styling*/
+    .service-cards{
+        grid-column: span 12;
+    }
+
+/*Portfolio Section Styling*/
+    .port_cards{
+        grid-column: span 12;
+        background-color: #A27B5C;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .port_cards > img {
+        width: 100%;
+
+    }
+
+/*About Me Styling*/
+    .abt_me_img{
+        grid-column: span 12;
+    }
+
+    .abt_me_img > img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .abt_me_info{
+        grid-column: span 12;
+        background-color: #A27B5C;
+        padding: 15px;
+        border-radius: 15px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
