@@ -11,11 +11,15 @@ body{
 }
 
 .navbar{
-    --bs-navbar-brand-color: white;
+    --bs-navbar-brand-color: #A27B5C;
     --bs-navbar-brand-hover-color: white;
     --bs-navbar-active-color: #A27B5C;
-    --bs-navbar-toggler-border-color: white;
+    --bs-navbar-toggler-border-color: none;
     --bs-navbar-color: white;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
 }
 
 section{
@@ -122,6 +126,38 @@ a{
     justify-content: center;
 }
 
+/*About Me Perm Styling*/
+.abt_me_info{
+    background-color: #A27B5C;
+    border-radius: 15px;
+}
+
+.abt_me_img > img {
+    border-radius: 50%;
+}
+
+
+/*Contact Me Section Styling*/
+#contact-form{
+    background-color: #A27B5C;
+    grid-column: 2/12;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+label{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+input, textarea{
+    width: 100%;
+    display: grid;
+    grid-column: span 12;
+    color: black;
+    margin-bottom: 5px;
+}
 
 
 
@@ -172,9 +208,8 @@ a{
 
     .abt_me_info{
         grid-column: span 12;
-        background-color: #A27B5C;
         padding: 15px;
-        border-radius: 15px;
+       
     }
 }
 
