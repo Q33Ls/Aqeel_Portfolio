@@ -281,18 +281,18 @@ input, textarea{
     /* Hero Section Styling */
 
    .hero-info{
-    grid-column: 1/6;
+    grid-column: span 6;
    }
 
    .hero-img{
-    display: contents;
-    grid-column: 7/12;
+    display: grid;
+    grid-column: 7/13;
     
    }
 
    .hero-img > img {
-    grid-column: 7/12;
     width: 100%;
+    margin: auto;
    }
 
    /* Services Section Styling*/
@@ -315,11 +315,96 @@ input, textarea{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .navbar-collapse{
+        flex-grow: 0;
+    }
+
+    section{
+        margin: 0 75px 0 75px;
+    }
+
+    /*Hero Section Styling*/
+
+    .hero-img > img {
+        width: 65%;
+       }
+
+
+    /*About Me Styling*/
+    .abt_me_img{
+        grid-column: span 4;
+        align-content: center;
+    }
+
+    .abt_me_img > img {    
+        width: 100%;
+
+    }
+
+    .abt_me_info{
+        grid-column: span 8;
+    }
+
+    #contact-form{
+        background-color: #A27B5C;
+        grid-column: 3/11;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    
+    label{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+    }
+    
+    input, textarea{
+        width: 80%;
+        display: grid;
+        grid-column: span 12;
+        color: black;
+        margin-bottom: 5px;
+        margin: auto;
+    }
 
 }
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    /*Hero Styling*/
+
+
+    /*Services styling*/
+    .service-cards{
+        grid-column: span 4;
+    }
+
+    .services > div:last-child{
+        grid-column: span 4;
+    }
+
+    /*Portfolio styling*/
+
+    .port_cards{
+        grid-column: span 4;
+    }
+
+    /*About Me Styling*/
+    .abt_me_img{
+        display: flex;
+        grid-column: span 6;
+        margin: auto;
+        justify-content: center;
+        
+    }
+
+    .abt_me_img > img {    
+        width: 65%;
+    }
+
+    .abt_me_info{
+        grid-column: 7/12;
+    }
+
 
 }
 
