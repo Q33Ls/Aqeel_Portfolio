@@ -32,6 +32,7 @@ section{
     display: grid;
     grid-column: span 12;
     justify-content: center;
+    font-family: ;
 }
 
 .socials{
@@ -161,6 +162,8 @@ input, textarea{
 
 
 
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     section{
@@ -216,10 +219,97 @@ input, textarea{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
+    section{
+        margin: 0 25px 0 25px;
+        padding: 25px 0 25px 0;
+    }
+/* Hero Section Styling */
+
+    .hero-info{
+        grid-column: span 12;
+    }
+
+    .hero-img{
+        display: none;
+    }
+
+    
+/* Services Section Styling*/
+    .service-cards{
+        grid-column: span 12;
+    }
+
+/*Portfolio Section Styling*/
+    .port_cards{
+        grid-column: span 12;
+        background-color: #A27B5C;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .port_cards > img {
+        width: 100%;
+
+    }
+
+/*About Me Styling*/
+    .abt_me_img{
+        grid-column: span 12;
+    }
+
+    .abt_me_img > img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .abt_me_info{
+        grid-column: span 12;
+        padding: 15px;
+       
+    }    
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    section{
+        margin: 0 50px 0 50px;
+        padding: 25px 0 25px 0;
+    }
+
+    /* Hero Section Styling */
+
+   .hero-info{
+    grid-column: 1/6;
+   }
+
+   .hero-img{
+    display: contents;
+    grid-column: 7/12;
+    
+   }
+
+   .hero-img > img {
+    grid-column: 7/12;
+    width: 100%;
+   }
+
+   /* Services Section Styling*/
+
+   .service-cards{
+        grid-column: span 6;
+    }
+
+    .services > div:last-child{
+        grid-column: span 12;
+    }
+
+    /*Portfolio Section Styling*/
+
+    .port_cards{
+        grid-column: span 6;
+    }  
 
 }
 
