@@ -84,42 +84,61 @@ a{
     text-decoration: none;
 }
 
-.btn-full{
-    border: solid;
-    border-radius: 5px;
-    border-color: #A27B5C;
-    background-color: #A27B5C;
+.btn-primary{
+--bs-btn-color: #fff;
+    --bs-btn-bg:#A27B5C ;
+    --bs-btn-border-color: #A27B5C;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #A27B5C;
+    --bs-btn-hover-border-color: #A27B5C;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #A27B5C;
+    --bs-btn-active-border-color: #A27B5C;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #A27B5C;
+    --bs-btn-disabled-border-color: #A27B5C;
 }
 
-.btn-full > a{
-    background-color: #A27B5C;
+.btn-outline-primary {
+    --bs-btn-color: #A27B5C;
+    --bs-btn-border-color: #A27B5C;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #A27B5C;
+    --bs-btn-hover-border-color: #A27B5C;
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #A27B5C;
+    --bs-btn-active-border-color: #A27B5C;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #A27B5C;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #A27B5C;
+    --bs-gradient: none;
 }
 
-.btn-full:hover{
-    background-color: #2C3639;
+
+.btn-outline-secondary {
+    --bs-btn-color:#2C3639;
+    --bs-btn-border-color:#2C3639 ;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg:#2C3639 ;
+    --bs-btn-hover-border-color: #2C3639;
+    --bs-btn-focus-shadow-rgb: 108, 117, 125;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg:#2C3639 ;
+    --bs-btn-active-border-color: #2C3639;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color:#2C3639 ;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color:#2C3639 ;
+    --bs-gradient: none;
 }
 
-.btn-full > a:hover{
-    background-color: #2C3639;
-}
-
-.btn-outline{
-    border: solid;
-    border-radius: 5px;
-    border-color: #A27B5C;
-    background-color: #2C3639;
-}
-
-.btn-outline > a{
-    background-color: #2C3639;
-}
-
-.btn-outline:hover{
-    background-color: #A27B5C;
-}
-
-.btn-outline > a:hover{
-    background-color:#A27B5C ;
+.btn-submit{
+    margin: auto;
+    display: grid;
 }
 
 /*Service Card Perm Stylings*/
@@ -482,6 +501,10 @@ textarea{
         grid-column: span 12;
     }
 
+    /*Contact Me Section Styling*/
+    #contact-form{
+        grid-column: 4/10;
+    }
 
 }
 
