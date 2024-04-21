@@ -10,6 +10,11 @@ body{
     background-color: #2C3639; 
 }
 
+.navbar-brand, .nav-item{
+    font-family: 'Big Shoulders Display' ;
+    font-weight: 800;
+}
+
 .navbar{
     --bs-navbar-brand-color: #A27B5C;
     --bs-navbar-brand-hover-color: white;
@@ -32,7 +37,7 @@ section{
     display: grid;
     grid-column: span 12;
     justify-content: center;
-    font-family: ;
+ 
 }
 
 .socials{
@@ -40,23 +45,38 @@ section{
 }
 
 p{
-    font-size: 1em;
+    font-size: 1rem;
     padding: 1em 0 1em 0;
 }
 
+h4{
+    font-size: 1.728rem;
+}
+
 h3{
-    font-size: 1.73em;
+    font-family: 'Big Shoulders Display';
+    font-size: 2.074rem;
     padding-bottom: 0.5em;
 }
 
 h1{
-    font-size: 2.48em;
+    font-size: 2.986rem;
     padding: 0.5em 0 0.5em 0 ;
+}
+
+h2{
+    font-size: 2.488rem;
+}
+
+h2, h4{
+    font-family: 'Big Shoulders Display';
 }
 
 button{
     padding: 0.2em;
     font-size: 1em;
+    font-family: 'Big Shoulders Display';
+    font-weight: 500;
 }
 
 a{
@@ -128,7 +148,7 @@ a{
 }
 
 /*About Me Perm Styling*/
-.abt_me_info{
+.abt_me_info, .second-body{
     background-color: #A27B5C;
     border-radius: 15px;
 }
@@ -138,11 +158,13 @@ a{
 }
 
 
+
+
 /*Contact Me Section Styling*/
 #contact-form{
     background-color: #A27B5C;
     grid-column: 2/12;
-    padding: 20px;
+    padding: 30px;
     border-radius: 15px;
 }
 
@@ -158,6 +180,8 @@ input, textarea{
     grid-column: span 12;
     color: black;
     margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
 }
 
 
@@ -209,7 +233,7 @@ input, textarea{
         border-radius: 50%;
     }
 
-    .abt_me_info{
+    .abt_me_info, .second-body{
         grid-column: span 12;
         padding: 15px;
        
@@ -262,11 +286,53 @@ input, textarea{
         border-radius: 50%;
     }
 
-    .abt_me_info{
+    .abt_me_info, .second-body{
         grid-column: span 12;
         padding: 15px;
        
     }    
+
+/*Contact Me Styling*/
+#contact-form{
+    background-color: #A27B5C;
+    grid-column: 2/12;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+label{
+    font-size: 1.44rem;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+}
+
+input, textarea{
+    font-size: 1.2rem;
+    padding: 8px;
+    width: 85%;
+    display: grid;
+    grid-column: span 12;
+    color: black;
+    margin: auto;
+    
+   
+}    
+
+textarea{
+    margin-bottom: 10px;
+   
+}
+
+.btn-submit{
+    font-size: 1.44rem;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+}
+
 
 
 }
@@ -311,6 +377,12 @@ input, textarea{
         grid-column: span 6;
     }  
 
+    /*About me info*/
+
+    .abt_me_info, .second-body {
+        padding: 40px;
+    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -345,34 +417,35 @@ input, textarea{
         grid-column: span 8;
     }
 
-    #contact-form{
-        background-color: #A27B5C;
-        grid-column: 3/11;
-        padding: 20px;
-        border-radius: 15px;
-    }
     
-    label{
-        width: 100%;
-        display: grid;
-        justify-content: center;
-    }
-    
-    input, textarea{
-        width: 80%;
-        display: grid;
-        grid-column: span 12;
-        color: black;
-        margin-bottom: 5px;
-        margin: auto;
-    }
 
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    section{
+        margin: 0 150px 0 150px;
+        padding:  75px 0 75px 0;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand{
+        font-size: 2.488rem;
+    }
+
+    .navbar-collapse{
+        font-size: 1.44rem;
+    }
+
+
+
     /*Hero Styling*/
 
-
+    .hero-img > img {
+        width: 50%;
+       }
     /*Services styling*/
     .service-cards{
         grid-column: span 4;
@@ -391,18 +464,22 @@ input, textarea{
     /*About Me Styling*/
     .abt_me_img{
         display: flex;
-        grid-column: span 6;
+        grid-column: span 4;
         margin: auto;
         justify-content: center;
         
     }
 
     .abt_me_img > img {    
-        width: 65%;
+        width: 100%;
     }
 
     .abt_me_info{
-        grid-column: 7/12;
+        grid-column: 5/13;
+    }
+
+    .second-body{
+        grid-column: span 12;
     }
 
 
