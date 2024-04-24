@@ -51,6 +51,7 @@ p{
 
 h4{
     font-size: 1.728rem;
+    padding-top: 15px;
 }
 
 h3{
@@ -70,6 +71,10 @@ h2{
 
 h2, h4{
     font-family: 'Big Shoulders Display';
+}
+
+.hero-info > h3{
+    color: #A27B5C;
 }
 
 button{
