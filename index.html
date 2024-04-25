@@ -3,82 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aqeel.</title>
+    <title>AD-Developments.</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;600;700&family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/responsive.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('boKyyyG-ainPpVTrP');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_13o9h86', 'template_6gltkd5', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+    
 
 </head>
+
 <body>
-
- <nav class="navbar">
-       <a href="#" class="logo">AQEEL.</a>
-       <input type="checkbox" id="toggler">
-       <label for="toggler"><i class="fa-solid fa-bars"></i></label>
-       <div class="menu">
-           <ul class="list">
-               <li><a href="index.html">Home</a></li>
-               <li><a href="#services">Services</a></li>
-               <li><a href="#portfolio">Portfolio</a></li>
-               <li><a href="#about_me">About Me</a></li>
-               <li><a href="#contact_me">Contact Me</a></li>
-           </ul>
-       </div>
-
-   </nav> 
+    <nav class="navbar navbar-expand-lg  rounded " aria-label="Eleventh navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">AD-Developments.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="imgs/icons8-hamburger-menu-32.png" alt="">
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarsExample09">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about_me">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact_me">Contact Me</a>
+              </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
    <section class="hero">
     <div class="hero-info">
         <h1>Hi, I'm Aqeel Dalvie</h1>
         <h3>Frontend Developer</h3>
-        <p>"Hi there! I'm [Your Name], a front-end web developer who crafts captivating designs and seamless user experiences. With expertise in pixel-perfect designs and responsive coding, I bring websites to life that blend creativity and functionality, leaving a lasting impression on visitors."</p>
-        <div>
-            <button class="btn-full"><a href="">Let's Talk</a></button>
-            <button class="btn-outline "><a href="">Resume</a></button></div>
+        <p>"Hi there! I'm Aqeel Dalvie, a front-end web developer who crafts captivating designs and seamless user experiences. With expertise in pixel-perfect designs and responsive coding, I bring websites to life that blend creativity and functionality, leaving a lasting impression on visitors."</p>
+        
+    <div>
+        <button type="button" class="btn btn-primary"><a href="#contact_me">Let's Talk</a></button>
+        
+        
     </div>
-    
-    <div class="hero-img">
-        <img src="/imgs/Profile/IMG_6537 (1).jpg" alt="">
-    </div>
+   
+</div>
+<div class="hero-img">
+    <img src="/imgs/Profile/IMG_6537 (1).jpg" alt="">
+</div>
     <div class="socials">
-        <a href=""><img src="/imgs/Socials/icons8-whatsapp-50.png" alt=""></a>
-        <a href=""><img src="imgs/Socials/icons8-linkedin-50.png" alt=""></a>
+        <a href="https://wa.me/0743395612" target="_blank"><img src="/imgs/Socials/icons8-whatsapp-50.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/aqeel-dalvie-b26242205" target="_blank"><img src="imgs/Socials/icons8-linkedin-50.png" alt=""></a>
         <a href=""><img src="imgs/Socials/icons8-instagram-50.png" alt=""></a>
     </div>
-    <div class="scroll-btn">
-        <button class="btn-full"><a href="#services">Scroll Down</a></button>
-    </div>
+
+
+
 
    </section>
    
    <section class="services" id="services">
-    <h2 class="service-h">Services</h2>
+    <div class="section_head">
+        <h2 class="service-h">Services</h2>
+    </div>
+    
         <div class="service-cards">
             <h3>Design</h3>
             <p>Capture attention and inspire action with bespoke web designs. Using Figma, I create mockups that fuse layout precision, captivating colors, expressive fonts, and impactful graphics. Elevate your brand's digital presence through visually stunning and user-centric designs that leave a lasting impression. Let's shape your website into an engaging experience that drives results.</p>
@@ -94,42 +95,48 @@
     
    </section>
    <section class="portfolio" id="portfolio">
-    <h2>Portfolio</h2>
+    <div class="section_head">
+        <h2>Portfolio</h2>
+    </div> 
     <div class="port_cards">
         <img src="/imgs/Port_Mockups/Sun_Touched_Beauty.png" alt="">
         <h4>Sun Touched Beauty</h4>
-        <p>A portfolio website for a Beauty business, designed to give information about the business. Created using: <b>HTML, CSS</b>.</p>
+        <p>A portfolio website for a Beauty business, designed to give information about the business. Created using: HTML, CSS.
+        </p>
+        <a target="_blank"  href="https://sun-touched-beauty.netlify.app">Click here to view.</a>
     </div>
     <div class="port_cards">
         <img src="/imgs/Port_Mockups/Sun_Touched_Beauty.png" alt="">
         <h4>Sun Touched Beauty</h4>
-        <p>A portfolio website for a Beauty business, designed to give information about the business. Created using: <b>HTML, CSS</b>.</p>
+        <p>A portfolio website for a Beauty business, designed to give information about the business. Created using: HTML, CSS.</p>
     </div>
     <div class="port_cards">
         <img src="/imgs/Port_Mockups/Sun_Touched_Beauty.png" alt="">
         <h4>Sun Touched Beauty</h4>
-        <p>A portfolio website for a Beauty business, designed to give information about the business. Created using: <b>HTML, CSS</b>.</p>
+        <p>A portfolio website for a Beauty business, designed to give information about the business. Created using: HTML, CSS.</p>
     </div>
     <div class="port_cards">
         <img src="/imgs/Port_Mockups/Sun_Touched_Beauty.png" alt="">
         <h4>Sun Touched Beauty</h4>
-        <p>A portfolio website for a Beauty business, designed to give information about the business. Created using: <b>HTML, CSS</b>.</p>
+        <p>A portfolio website for a Beauty business, designed to give information about the business. Created using: HTML, CSS.</p>
     </div>
     <div class="port_cards">
         <img src="/imgs/Port_Mockups/Sun_Touched_Beauty.png" alt="">
         <h4>Sun Touched Beauty</h4>
-        <p>A portfolio website for a Beauty business, designed to give information about the business. Created using: <b>HTML, CSS</b>.</p>
+        <p>A portfolio website for a Beauty business, designed to give information about the business. Created using: HTML, CSS.</p>
     </div>
     <div class="port_cards">
         <img src="/imgs/Port_Mockups/Sun_Touched_Beauty.png" alt="">
         <h4>Sun Touched Beauty</h4>
-        <p>A portfolio website for a Beauty business, designed to give information about the business. Created using: <b>HTML, CSS</b>.</p>
+        <p>A portfolio website for a Beauty business, designed to give information about the business. Created using: HTML, CSS.</p>
     </div>
     
     
    </section>
    <section class="about_me" id="about_me">
-    <h2>About Me</h2>
+    <div class="section_head">
+        <h2>About Me</h2>
+    </div>
     <div class="abt_me_img">
         <img src="/imgs/Profile/IMG_1249.jpg" alt="">
     </div>
@@ -138,18 +145,19 @@
             <p>Hello, I'm Aqeel, a front-end web developer with a BCom General degree and a passion for crafting digital experiences that resonate.
             </p>
             
-            <p>My journey in web development has been an exciting blend of creativity and code. Armed with the versatile knowledge from my BCom General degree, I've found myself in the world of website design and development. I love the challenge of bringing ideas to life, transforming them into visually stunning and highly functional websites.</p>
+            <p>My journey in web development has been an exciting blend of creativity and code. Armed with the versatile knowledge from my BCom General degree, I've found myself in the world of website design and development. I love the challenge of bringing ideas to life, transforming them into visually stunning and highly functional websites.</p>   
+        </div>     
+    </div>
+    <div class="second-body">
+        <p>Beyond the screen, I'm an avid gamer, a music enthusiast, and a tech tinkerer. These interests not only keep my creative juices flowing but also enhance my skills. Just as I continuously seek the next level in a game, I'm always eager to level up my web development skills.</p>
 
-            <p>Beyond the screen, I'm an avid gamer, a music enthusiast, and a tech tinkerer. These interests not only keep my creative juices flowing but also enhance my skills. Just as I continuously seek the next level in a game, I'm always eager to level up my web development skills.</p>
-
-            <p>Join me on this digital adventure, and let's build web experiences that are as dynamic and engaging as the games I love, as harmonious as my music collection, and as innovative as the tech I tinker with. Together, we'll turn your web dreams into reality.</p>
-
-        </div>
-        
+        <p>Join me on this digital adventure, and let's build web experiences that are as dynamic and engaging as the games I love, as harmonious as my music collection, and as innovative as the tech I tinker with. Together, we'll turn your web dreams into reality.</p>
     </div>
    </section>
    <section class="contact_me" id="contact_me">
-    <h2>Contact Me</h2>
+    <div class="section_head">
+        <h2>Contact Me</h2>
+    </div>
     <form id="contact-form">
         <label>Name</label>
         <input type="text" name="user_name">
@@ -159,13 +167,39 @@
         <input type="text" name="contact_number">
         <label>Message</label>
         <textarea name="message"></textarea>
-        <input type="submit" value="Send">
+        <input class=" btn-submit btn btn-outline-secondary" type="submit" value="Send">
     </form>
     
    </section>
+<!-- Bootstrap Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-   
-   
-   
+<!-- EmailJs Script-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+   <script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init('boKyyyG-ainPpVTrP');
+    })();
+    </script>
+
+    <script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = Math.random() * 100000 | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm('service_13o9h86', 'template_6gltkd5', this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+    </script>
 </body>
 </html>
